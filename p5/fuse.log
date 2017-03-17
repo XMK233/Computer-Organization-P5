@@ -1,0 +1,59 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o G:/ISE Files/p5/test_isim_beh.exe -prj G:/ISE Files/p5/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:/ISE Files/p5/pc.v" into library work
+WARNING:HDLCompiler:751 - "G:/ISE Files/p5/pc.v" Line 27: Redeclaration of ansi port Pc is not allowed
+Analyzing Verilog file "G:/ISE Files/p5/npc.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mux5.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mux4.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mux3.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mux2.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mux1.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mem_wb.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/im_id.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/im.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/HazardSense.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/gpr.v" into library work
+WARNING:HDLCompiler:751 - "G:/ISE Files/p5/gpr.v" Line 34: Redeclaration of ansi port RData1 is not allowed
+Analyzing Verilog file "G:/ISE Files/p5/FR_ID_EX.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/ForwardUnit.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/ex_mem.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/dm.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/ctrl.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/alu.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/mips.v" into library work
+Analyzing Verilog file "G:/ISE Files/p5/test/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 155460 KB
+Fuse CPU Usage: 1156 ms
+Compiling module PC
+Compiling module NPC
+Compiling module IM
+Compiling module FR_IF_ID
+Compiling module MUX_Bubble
+Compiling module Controller
+Compiling module GPR
+Compiling module FR_ID_EX
+Compiling module MUX_Operand1
+Compiling module MUX_Operand2
+Compiling module ALU
+Compiling module MUX_Dst
+Compiling module FR_EX_MEM
+Compiling module ForwardUnit
+Compiling module DM
+Compiling module FR_MEM_WB
+Compiling module MUX_MemOrALU
+Compiling module HSU
+Compiling module mips
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable G:/ISE Files/p5/test_isim_beh.exe
+Fuse Memory Usage: 161036 KB
+Fuse CPU Usage: 1531 ms

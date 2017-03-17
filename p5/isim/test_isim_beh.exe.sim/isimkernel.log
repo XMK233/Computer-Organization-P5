@@ -1,0 +1,10 @@
+Command line:
+   test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57605
+
+Wed Nov 25 22:12:20 2015
+
+
+ Elaboration Time: 0.5 sec

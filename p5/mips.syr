@@ -1,0 +1,165 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "pc.v" in library work
+Compiling verilog file "npc.v" in library work
+Module <PC> compiled
+Compiling verilog file "mux5.v" in library work
+Module <NPC> compiled
+Compiling verilog file "mux4.v" in library work
+Module <MUX_Bubble> compiled
+Compiling verilog file "mux3.v" in library work
+Module <MUX_MemOrALU> compiled
+Compiling verilog file "mux2.v" in library work
+Module <MUX_Dst> compiled
+Compiling verilog file "mux1.v" in library work
+Module <MUX_Operand2> compiled
+Compiling verilog file "mem_wb.v" in library work
+Module <MUX_Operand1> compiled
+Compiling verilog file "im_id.v" in library work
+Module <FR_MEM_WB> compiled
+Compiling verilog file "im.v" in library work
+Module <FR_IF_ID> compiled
+Compiling verilog file "HazardSense.v" in library work
+Module <IM> compiled
+Compiling verilog file "gpr.v" in library work
+Module <HSU> compiled
+Compiling verilog file "FR_ID_EX.v" in library work
+Module <GPR> compiled
+Compiling verilog file "ForwardUnit.v" in library work
+Module <FR_ID_EX> compiled
+Compiling verilog file "ex_mem.v" in library work
+Module <ForwardUnit> compiled
+Compiling verilog file "dm.v" in library work
+Module <FR_EX_MEM> compiled
+Compiling verilog file "ctrl.v" in library work
+Module <DM> compiled
+Compiling verilog file "alu.v" in library work
+Module <Controller> compiled
+Compiling verilog file "mips.v" in library work
+Module <ALU> compiled
+ERROR:HDLCompilers:27 - "mips.v" line 26 Illegal redeclaration of 'ALUResultM'
+ERROR:HDLCompilers:27 - "mips.v" line 26 Illegal redeclaration of 'OperandA'
+ERROR:HDLCompilers:27 - "mips.v" line 26 Illegal redeclaration of 'OperandB'
+ERROR:HDLCompilers:27 - "mips.v" line 29 Illegal redeclaration of 'RtE'
+ERROR:HDLCompilers:27 - "mips.v" line 30 Illegal redeclaration of 'RdE'
+ERROR:HDLCompilers:27 - "mips.v" line 30 Illegal redeclaration of 'RsE'
+ERROR:HDLCompilers:27 - "mips.v" line 33 Illegal redeclaration of 'npc'
+ERROR:HDLCompilers:27 - "mips.v" line 34 Illegal redeclaration of 'RegWriteD'
+ERROR:HDLCompilers:27 - "mips.v" line 40 Illegal redeclaration of 'RegWriteE'
+ERROR:HDLCompilers:27 - "mips.v" line 45 Illegal redeclaration of 'RegDstE'
+ERROR:HDLCompilers:27 - "mips.v" line 49 Illegal redeclaration of 'ALUResultM'
+ERROR:HDLCompilers:27 - "mips.v" line 53 Illegal redeclaration of 'BubbleEn'
+Module <mips> compiled
+Analysis of file <"mips.prj"> failed.
+--> 
+
+Total memory usage is 237536 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

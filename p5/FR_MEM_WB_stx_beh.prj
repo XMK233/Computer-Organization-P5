@@ -1,0 +1,2 @@
+verilog isim_temp "mem_wb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
